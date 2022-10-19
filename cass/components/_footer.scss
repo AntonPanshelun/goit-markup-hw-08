@@ -5,22 +5,19 @@
 .container-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .logo-footer {
-  margin-bottom: 20px;
   display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: #ffffff;
-}
-
-.links .item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 20px;
 }
 
 .links a {
@@ -40,13 +37,23 @@
   color: #ffffff;
 }
 
+.links .item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .offer {
+  margin-top: 60px;
   color: #ffffff;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.social-links-footer {
+  display: flex;
+  justify-content: center;
 }
 
 .link-footer {
@@ -72,28 +79,15 @@
   margin-left: 10px;
 }
 
-.social-links-footer {
-  display: flex;
-}
-
-.container-footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.form-footer {
-  display: flex;
-}
-
 .input-footer {
   outline: none;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
   padding: 15px;
+  margin-bottom: 20px;
 
   font-weight: 400;
   font-size: 16px;
@@ -109,7 +103,7 @@
 }
 
 .button-subscribe {
-  display: flex;
+  display: inline-block;
   align-items: center;
   padding: 10px 28px;
   min-width: 200px;
@@ -139,3 +133,12 @@
   margin-left: 10px;
 }
 
+// .container-footer {
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: space-between;
+// }
+
+// .form-footer {
+//   display: flex;
+// }

@@ -2,11 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--no-action-color);
   border-radius: 4px;
   fill: var(--no-action-color);
+  margin-right: var(--set-card-gap);
+  margin-bottom: var(--set-card-gap);
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -22,5 +24,7 @@
 
 .clients__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
