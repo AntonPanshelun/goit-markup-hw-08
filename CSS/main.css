@@ -27,17 +27,27 @@ img {
   max-width: 100%;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -416,6 +426,10 @@ li {
   margin-bottom: 30px;
 }
 
+.team__member {
+  background-color: #fff;
+}
+
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,7 +440,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid var(--no-action-color);
   border-radius: 4px;
@@ -675,7 +689,7 @@ li {
 
 .input-footer {
   outline: none;
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -745,7 +759,7 @@ li {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
+  max-width: 450px;
   height: 609px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -881,7 +895,7 @@ li {
 
 .textarea-style {
   outline: none;
-  width: 370px;
+  max-width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
