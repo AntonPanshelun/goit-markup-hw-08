@@ -146,18 +146,6 @@ li {
   margin-bottom: 32px;
 }
 
-.header-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .menu-toggle {
   display: block;
   min-width: 40px;
