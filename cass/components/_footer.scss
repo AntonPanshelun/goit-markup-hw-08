@@ -107,6 +107,7 @@
   align-items: center;
   padding: 10px 28px;
   min-width: 200px;
+  height: 50px;
   margin: 0 auto;
 
   font-family: "Roboto";
@@ -150,6 +151,31 @@
 }
 
 
-// .form-footer {
-//   display: flex;
-// }
+@include desktop {
+  .form-footer {
+    display: flex;
+  }
+  .button-subscribe {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+  .input-footer {
+    width: 358px;
+  }
+  .container-footer {
+    display: flex;
+    text-align: initial;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .offer {
+    margin-top: 0;
+  }
+  .form-subscribe {
+    margin: 0;
+    max-width: 570px;
+  }
+  .offer-links {
+    margin-left: 70px;
+  }
+}

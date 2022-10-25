@@ -113,7 +113,7 @@ li {
   color: #2196f3;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .container-nav {
     display: none;
   }
@@ -123,8 +123,22 @@ li {
   .icon {
     display: none;
   }
-  .name-pages {
-    margin-bottom: auto;
+}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .name-pages-mob .item + .item {
+    margin-top: 32px;
   }
   .link-tel {
     font-weight: 500;
@@ -214,9 +228,9 @@ li {
 }
 
 .social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 .social-list .social-item + .social-item {
   margin-left: 10px;
@@ -235,19 +249,6 @@ li {
   padding-right: 10px;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -255,6 +256,17 @@ li {
   .text-nav {
     font-size: 14px;
     line-height: 1.14;
+    position: relative;
+  }
+  .current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--hover-color);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
   }
   .header-box {
     display: -webkit-box;
@@ -1002,6 +1014,7 @@ li {
           align-items: center;
   padding: 10px 28px;
   min-width: 200px;
+  height: 50px;
   margin: 0 auto;
   font-family: "Roboto";
   font-style: normal;
@@ -1043,6 +1056,42 @@ li {
   }
   .wrapper-contacts-footer .offer {
     margin-top: 0%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .button-subscribe {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+  .input-footer {
+    width: 358px;
+  }
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: initial;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .offer {
+    margin-top: 0;
+  }
+  .form-subscribe {
+    margin: 0;
+    max-width: 570px;
+  }
+  .offer-links {
+    margin-left: 70px;
   }
 }
 .backdrop {
