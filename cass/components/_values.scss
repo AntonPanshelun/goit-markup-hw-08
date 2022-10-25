@@ -25,6 +25,31 @@
   color: var(--paragraph-color);
 }
 
+.values {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@include tablet {
+  .values-list {
+    max-width: 354px;
+  }
+  .values {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .title-values {
+    text-align: start;
+  }
+}
+
+@include desktop {
+  .values-list {
+    max-width: 270px;
+}
+}
 // .values {
 //     display: flex;
 

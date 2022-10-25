@@ -81,7 +81,7 @@
 
 .input-footer {
   outline: none;
-  max-width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -103,11 +103,11 @@
 }
 
 .button-subscribe {
-  display: inline-block;
+  display: flex;
   align-items: center;
   padding: 10px 28px;
   min-width: 200px;
-  margin-left: 12px;
+  margin: 0 auto;
 
   font-family: "Roboto";
   font-style: normal;
@@ -133,11 +133,22 @@
   margin-left: 10px;
 }
 
-// .container-footer {
-//   display: flex;
-//   align-items: baseline;
-//   justify-content: space-between;
-// }
+.form-subscribe {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+@include tablet {
+  .wrapper-contacts-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    .offer {
+      margin-top: 0%;
+    }
+  }
+}
+
 
 // .form-footer {
 //   display: flex;
