@@ -32,6 +32,12 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   max-width: 480px;
   padding-left: 15px;
@@ -284,6 +290,12 @@ li {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: var(--paragraph-color);
   }
   .contacts-nav:hover, .contacts-nav:focus {
@@ -305,6 +317,11 @@ li {
   }
   .name-pages .item:not(:last-child) {
     margin-right: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .data-contacts li:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -400,7 +417,6 @@ li {
   display: flex;
   text-align: center;
   max-width: 1600px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/hero-mob-1x.jpg");
@@ -417,7 +433,7 @@ li {
   }
 }
 .hero-section {
-  padding: 118px 60px;
+  padding: 118px 0;
 }
 
 .hero-title {
