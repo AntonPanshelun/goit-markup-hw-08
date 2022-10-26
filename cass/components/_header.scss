@@ -128,7 +128,6 @@
 
   color: #212121;
 
-  // position: relative;
   &.current {
     color: var(--hover-color);
   }
@@ -165,10 +164,6 @@
   padding-right: 10px;
 }
 
-// .wrapper {
-//   display: flex;
-//   flex-direction: column;
-// }
 
 @include tablet {
   .menu-toggle {
