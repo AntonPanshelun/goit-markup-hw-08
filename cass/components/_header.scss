@@ -148,10 +148,8 @@
 
 .social-list {
   display: inline-flex;
-
-  & .social-item + .social-item {
-    margin-left: 10px;
-  }
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .social-link {
